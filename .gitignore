@@ -5,9 +5,17 @@
 *.swp
 .DS_Store
 .atom/
+<<<<<<< HEAD
 .buildlog/
 .history
 .svn/
+=======
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+>>>>>>> ee55e2a (Create Flutter Project)
 migrate_working_dir/
 
 # IntelliJ related
@@ -16,19 +24,34 @@ migrate_working_dir/
 *.iws
 .idea/
 
+<<<<<<< HEAD
 # VS Code
 .vscode/
+=======
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+>>>>>>> ee55e2a (Create Flutter Project)
 
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+<<<<<<< HEAD
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
 /build/
+=======
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+>>>>>>> ee55e2a (Create Flutter Project)
 
 # Symbolication related
 app.*.symbols
@@ -40,6 +63,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+<<<<<<< HEAD
 
 # API Keys - NEVER COMMIT!
 lib/config/api_keys.dart
@@ -95,3 +119,5 @@ lib/config/api_keys.dart
 !**/ios/**/default.mode2v3
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
+=======
+>>>>>>> ee55e2a (Create Flutter Project)
