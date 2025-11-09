@@ -121,3 +121,4 @@ lib/config/api_keys.dart
 !**/ios/**/default.perspectivev3
 =======
 >>>>>>> ee55e2a (Create Flutter Project)
+.DS_Store
