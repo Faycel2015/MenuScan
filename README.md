@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🍽️ MenuScan
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?logo=flutter)](https://flutter.dev)
@@ -7,47 +6,38 @@
 
 **Your food-savvy travel companion** - Scan, translate, and explore restaurant menus worldwide! 🌍
 
-<p align="center">
-  <img src="assets/images/logo.png" alt="MenuScan Logo" width="200"/>
-</p>
-
 ## ✨ Features
 
-- 📸 **Menu Scanning** - OCR technology extracts text from photos
-- 🌍 **Translation** - Translate menus to 30+ languages instantly
-- 💱 **Currency Conversion** - Real-time price conversion (30+ currencies)
-- 💾 **Save & Organize** - Keep your favorite restaurant menus
+- 📸 **Menu Scanning** - OCR technology extracts text from photos instantly
+- 🌍 **Translation** - Translate menus to 30+ languages with one tap
+- 💱 **Currency Conversion** - Real-time price conversion for 30+ currencies
+- 💾 **Save & Organize** - Keep your favorite restaurant menus forever
 - 📍 **Discover Nearby** - Find restaurants around you with FREE maps
-- 🎨 **Beautiful UI** - Modern design with intuitive navigation
+- 🎨 **Beautiful UI** - Modern design with Sunset Orange & Ocean Blue theme
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
 - Flutter SDK 3.0+
 - Dart 2.19+
-- Android Studio / Xcode
-- Android device/emulator (API 21+) or iOS device/emulator (13.0+)
+- Android device (API 21+) or iOS device (13.0+)
 
 ### Installation
 
-1. **Clone the repository**
 ```bash
-   git clone https://github.com/Faycel2015/MenuScan.git
-   cd MenuScan
+# Clone the repository
+git clone https://github.com/Faycel2015/MenuScan.git
+cd MenuScan
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
 ```
 
-2. **Install dependencies**
-```bash
-   flutter pub get
-```
-
-3. **Run the app**
-```bash
-   flutter run
-```
-
-## 📱 Screenshots
+## 🎨 Screenshots
 
 *Coming soon...*
 
@@ -57,17 +47,32 @@
 - **State Management:** Provider
 - **Database:** SQLite
 - **OCR:** Google ML Kit
-- **Translation:** Google Translate API (Free)
-- **Currency:** ExchangeRate-API (Free)
-- **Maps:** OpenStreetMap (Free)
+- **Translation:** Google Translate API (FREE)
+- **Currency:** ExchangeRate-API (FREE)
+- **Maps:** OpenStreetMap (FREE)
 - **Location:** Geolocator
 
-## 🌟 Key Technologies
+## 🌟 Why MenuScan?
 
 - ✅ **100% Free APIs** - No API keys or billing required
 - ✅ **Offline Capable** - Works without internet (cached data)
-- ✅ **Privacy First** - All data stored locally
-- ✅ **Open Source** - MIT License
+- ✅ **Privacy First** - All data stored locally on your device
+- ✅ **Open Source** - MIT License, contribute freely!
+- ✅ **No Ads** - Clean, distraction-free experience
+
+## 📱 Supported Platforms
+
+- ✅ Android 5.0+ (API 21+)
+- ✅ iOS 13.0+
+- ✅ Tablets and phones
+
+## 🌍 Supported Languages
+
+English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Arabic, Hindi, Turkish, Polish, Dutch, Swedish, and 15+ more!
+
+## 💱 Supported Currencies
+
+USD, EUR, GBP, JPY, CNY, INR, AUD, CAD, CHF, and 20+ more!
 
 ## 📖 Documentation
 
@@ -79,7 +84,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your changes (`git commit -m '✨ Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
@@ -96,6 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Google ML Kit for OCR
 - OpenStreetMap contributors
 - Flutter team and community
+- All open-source contributors
 
 ## 📞 Support
 
@@ -103,24 +109,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 💬 Discussions: [GitHub Discussions](https://github.com/Faycel2015/MenuScan/discussions)
 - ⭐ Star this repo if you find it helpful!
 
+## 📊 Project Stats
+
+- 📁 **Files:** 60+ organized files
+- 💻 **Lines of Code:** 15,000+
+- 🎨 **Widgets:** 30+ reusable components
+- 🌍 **Languages:** 30+ supported
+- 💱 **Currencies:** 30+ supported
+
 ---
 
 Made with ❤️ by [Faycel](https://github.com/Faycel2015)
-=======
-# menuscan
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> ee55e2a (Create Flutter Project)

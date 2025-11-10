@@ -40,6 +40,10 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<key>NSCameraUsageDescription</key>
+        <string>We need camera access to scan menus</string>
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>We need photo library access to import menus</string>
 	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>

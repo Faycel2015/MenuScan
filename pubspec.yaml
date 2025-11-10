@@ -9,35 +9,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # State Management
+  
   provider: ^6.1.0
-
-  # Database
   sqflite: ^2.3.0
   path: ^1.8.3
-
-  # Local Storage
   shared_preferences: ^2.2.2
-
-  # Image Handling
   image_picker: ^1.0.4
   cached_network_image: ^3.3.0
-
-  # OCR & ML
   google_mlkit_text_recognition: ^0.11.0
-
-  # Network
   http: ^1.1.0
-
-  # Location (FREE)
   geolocator: ^10.1.0
-
-  # Maps (FREE OpenStreetMap)
   flutter_map: ^6.1.0
   latlong2: ^0.9.0
-
-  # Utilities
   url_launcher: ^6.2.1
   intl: ^0.18.1
 
@@ -48,7 +31,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
     - assets/images/
     - assets/translations/
