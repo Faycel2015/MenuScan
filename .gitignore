@@ -19,6 +19,12 @@ migrate_working_dir/
 # VS Code
 .vscode/
 
+# Swift / Swift Package Manager
+.build/
+.swiftpm/
+**/.build/
+**/.swiftpm/
+
 # Flutter/Dart/Pub
 **/doc/api/
 **/ios/Flutter/.last_build_id
