@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'core/themes/app_theme.dart';
 import 'core/constants/app_strings.dart';
+import 'presentation/screens/home/main_screen.dart';
 
 class MenuScanApp extends StatelessWidget {
   const MenuScanApp({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class MenuScanApp extends StatelessWidget {
       title: AppStrings.appName,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: const MenuScanApp(),
+      home: const MainScreen(),
     );
   }
 }
