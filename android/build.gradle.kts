@@ -1,52 +1,28 @@
+buildscript {
+    ext.kotlin_version = "1.9.25"
+
+    // Define flutter properties that plugins can access
+    ext.flutter = [
+        compileSdkVersion: 34,
+    minSdkVersion: 21,
+    targetSdkVersion: 34,
+    ndkVersion: "26.1.10909125"
+    ]
+}
+
 plugins {
-    id("com.android.application")
-    kotlin("android")
+    id("com.android.application") version "8.9.1" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.25" apply false
+    id("com.google.gms.google-services") version "4.4.2" apply false
 }
 
-android {
-    namespace = "com.faycel.menuscan"  // <- Your new package
-    compileSdk = 34  // Use your target compile SDK
-
-    defaultConfig {
-        applicationId = "com.faycel.menuscan"  // <- Your new package
-        minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
-        // For Flutter v2 embedding
-        multiDexEnabled = true
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 
-dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.annotation:annotation-jvm:1.9.1")
+tasks.register("clean", Delete::class) {
+    delete(rootProject.buildDir)
 }
-
-// This ensures Flutter plugins work correctly
-apply(plugin = "com.google.gms.google-services")
-
-fun android(function: Any) {}

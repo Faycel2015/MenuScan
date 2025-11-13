@@ -21,14 +21,14 @@ dependencies:
 
   # Camera & Image
   image_picker: ^1.0.4
-  camera: ^0.10.5
+  camera: ^0.11.3
 
   # UI
   cached_network_image: ^3.3.0
   shimmer: ^3.0.0
 
   # OCR & ML
-  google_ml_kit: ^0.16.0
+  google_ml_kit: ^0.20.0
 
   # Network
   http: ^1.1.0
@@ -43,6 +43,9 @@ dependencies:
   # Utils
   intl: ^0.20.2
   uuid: ^4.1.0
+
+dependency_overrides:
+  camera_android_camerax: 0.6.24+1
 
 dev_dependencies:
   flutter_test:
