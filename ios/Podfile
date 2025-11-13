@@ -1,18 +1,6 @@
-# Define a global platform for your project
 platform :ios, '15.5'
 
-# Use CocoaPods CDN for faster dependency resolution
-install! 'cocoapods',
-  :warn_for_unused_master_specs_repo => false,
-  :generate_multiple_pod_projects => true,
-  :incremental_installation => true
-
-ENV['COCOAPODS_DISABLE_STATS'] = 'true'
-
-# Use CDN instead of git clone (much faster!)
 source 'https://cdn.cocoapods.org/'
-# Add Google MLKit repo (needed for google_mlkit_translation, etc.)
-source 'https://github.com/google/GoogleMLKit.git'
 
 project 'Runner', {
   'Debug' => :debug,
@@ -34,6 +22,7 @@ def flutter_root
 end
 
 require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
 flutter_ios_podfile_setup
 
 target 'Runner' do
@@ -41,25 +30,19 @@ target 'Runner' do
   use_modular_headers!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-
-  target 'RunnerTests' do
-    inherit! :search_paths
-  end
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
-
-    # Fix config and Swift warnings
-    target.build_configurations.each do |config|
-      config.base_configuration_reference = nil
-      config.build_settings['SWIFT_VERSION'] = '5.0'
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.5'
-
-      # Suppress warnings for better build output
-      config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
-      config.build_settings['SWIFT_SUPPRESS_WARNINGS'] = 'YES'
+  end
+  
+  # Additional build settings
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.5'
+      end
     end
   end
 end
